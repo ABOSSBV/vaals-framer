@@ -1,0 +1,19 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8.17"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "cd14e4eb-d9be-4faa-83ae-1b2fd8a60582"
+	},
+	"author": "Thomas van Beek",
+	"dependencies": {
+		"styled-components": "^4.2.0",
+		"vaals": "^0.0.12"
+	}
+}
