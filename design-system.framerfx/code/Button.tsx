@@ -21,6 +21,7 @@ export function VaalsButton(props) {
             containerRightVisible={props.containerRightVisible}
             containerRightType={props.containerRightType}
             containerRightContent={props.containerRightContent}
+            loading={props.loading}
         />
     )
 }
@@ -33,6 +34,7 @@ VaalsButton.defaultProps = {
     containerLeftType: "icon",
     containerRightVisible: false,
     containerRightType: "icon",
+    loading: false,
 }
 
 addPropertyControls(VaalsButton, {
@@ -107,5 +109,9 @@ addPropertyControls(VaalsButton, {
         hidden(props) {
             return props.iconRightVisible === false
         },
+    },
+    loading: {
+        type: ControlType.Boolean,
+        title: "Loading",
     },
 })
