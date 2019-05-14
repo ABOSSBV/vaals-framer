@@ -14,6 +14,6 @@
 	"author": "Thomas van Beek",
 	"dependencies": {
 		"styled-components": "^4.2.0",
-		"vaals": "^0.0.16"
+		"vaals": "^0.0.17"
 	}
 }

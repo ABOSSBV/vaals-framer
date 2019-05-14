@@ -12,9 +12,9 @@ export interface Props {
 export function VaalsButton(props) {
     return (
         <Button
-            content={props.buttonContent}
-            color={props.buttonColor}
-            lightness={props.buttonLightness}
+            content={props.content}
+            color={props.color}
+            lightness={props.lightness}
             containerLeftVisible={props.containerLeftVisible}
             containerLeftType={props.containerLeftType}
             containerLeftContent={props.containerLeftContent}
@@ -29,7 +29,7 @@ export function VaalsButton(props) {
 VaalsButton.defaultProps = {
     width: 99,
     height: 48,
-    buttonContent: "Button",
+    content: "Button",
     containerLeftVisible: false,
     containerLeftType: "icon",
     containerRightVisible: false,
@@ -38,8 +38,8 @@ VaalsButton.defaultProps = {
 }
 
 addPropertyControls(VaalsButton, {
-    buttonContent: { type: ControlType.String, title: "Button Content" },
-    buttonColor: {
+    content: { type: ControlType.String, title: "Button Content" },
+    color: {
         type: ControlType.Enum,
         title: "Color",
         options: [
@@ -61,8 +61,8 @@ addPropertyControls(VaalsButton, {
             "Gray",
         ],
     },
-    buttonContent: { type: ControlType.String, title: "Button Content" },
-    buttonLightness: {
+    content: { type: ControlType.String, title: "Button Content" },
+    lightness: {
         type: ControlType.Number,
         defaultValue: 500,
         min: 100,
